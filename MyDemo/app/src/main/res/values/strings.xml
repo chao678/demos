@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyDemo</string>
+
+    <string name="aliyun_no_import_moudle">当前不包含导入模块</string>
+    <string name="aliyun_no_free_memory">剩余磁盘空间不足</string>
+    <string name="aliyun_filter_null">原片</string>
+    <string name="aliyun_camera_permission_tip">请开启摄像头权限</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+</resources>
