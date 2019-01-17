@@ -10,11 +10,10 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".base.App"
@@ -35,9 +34,11 @@
         <activity android:name=".testmvp.view.UserActivity" />
         <activity android:name=".AliyunVideoRecorder" />
         <activity android:name=".ui.activity.DongHuaActivity" />
-        <activity android:name=".ui.activity.TestActivity"></activity>
-        <activity android:name=".wifitest.WifiActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ui.activity.TestActivity" />
+        <activity
+            android:name=".wifitest.WifiActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.activity.Test2Activity"></activity>
     </application>
 
 </manifest>

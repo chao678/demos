@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.testapp.recyclerview.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:textColor="@color/grey_color1"
+        android:text="电话一"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_color1"
+            android:text="展示文字"/>
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.9"
+            android:textSize="14dp"
+            android:maxLength="6"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_color1"
+            android:text="电话号码"/>
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="14dp"
+            android:inputType="phone"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <!--<Button-->
+            <!--android:id="@+id/stick"-->
+            <!--android:text="置顶"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:background="@drawable/btn_stick"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/mark"-->
+            <!--android:text="标记未读"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:background="@drawable/btn_mark"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/delete"-->
+            <!--android:text="删除"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:background="@drawable/btn_delete"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="删除"/>
+
+    </LinearLayout>
+
+</com.example.testapp.recyclerview.SwipeItemLayout>

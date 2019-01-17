@@ -15,6 +15,7 @@ import com.example.mydemo.R;
 import com.example.mydemo.login.presenter.ILoginPresenter;
 import com.example.mydemo.login.presenter.LoginPresenterImpl;
 import com.example.mydemo.testmvp.view.UserActivity;
+import com.example.mydemo.ui.activity.Test2Activity;
 import com.example.mydemo.ui.activity.TestActivity;
 import com.example.mydemo.wifitest.WifiActivity;
 
@@ -82,7 +83,7 @@ public class LoginActivity extends AppCompatActivity  implements ILoginView, Vie
         if (result){
             Toast.makeText(this,"Login Success",Toast.LENGTH_SHORT).show();
 //            startActivity(new Intent(this, MainActivity.class));
-            startActivity(new Intent(this, TestActivity.class));
+            startActivity(new Intent(this, Test2Activity.class));
         }
         else
             Toast.makeText(this,"Login Fail, code = " + code,Toast.LENGTH_SHORT).show();

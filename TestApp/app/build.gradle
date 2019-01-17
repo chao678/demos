@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.textapp"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //说明so的路径为该libs路径，关联所有地图SDK的so文件
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.youth.banner:banner:1.4.10'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.alibaba:fastjson:1.2.47'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //    implementation 'org.webjars.npm:react-imageloader:2.1.0'
+    //    implementation 'com.novoda.imageloader:imageloader-core:1.6.1'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.3'
+    //    testCompile 'junit:junit:4.12'
+    implementation project(':myapplication')
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.aliyun.dpa:oss-android-sdk:+'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okio:okio:1.9.0'
+    //    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v1.2.7'
+    compile 'com.roughike:bottom-bar:2.0.2'
+}

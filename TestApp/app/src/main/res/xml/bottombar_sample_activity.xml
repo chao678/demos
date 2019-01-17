@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/space"
+        id="@+id/tab1"
+        title="Favorites" />
+    <tab
+        icon="@drawable/space"
+        id="@+id/tab2"
+        title="Nearby" />
+    <tab
+        icon="@drawable/space"
+        id="@+id/tab3"
+        title="Friends" />
+</tabs>

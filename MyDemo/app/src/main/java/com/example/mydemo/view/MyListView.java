@@ -2,6 +2,8 @@ package com.example.mydemo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.ViewGroup;
 import android.widget.ListView;
 
 public class MyListView extends ListView {
@@ -22,5 +24,10 @@ public class MyListView extends ListView {
         int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2,
                 MeasureSpec.AT_MOST);
         super.onMeasure(widthMeasureSpec, expandSpec);
+
+//        int specSize = MeasureSpec.getSize(heightMeasureSpec);
+//        int expandSpec = MeasureSpec.makeMeasureSpec(specSize - 150,
+//                MeasureSpec.AT_MOST);
+//        super.onMeasure(widthMeasureSpec, expandSpec);
     }
 }

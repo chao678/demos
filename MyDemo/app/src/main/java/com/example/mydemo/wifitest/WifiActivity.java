@@ -39,6 +39,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WifiActivity extends Activity {
+	private final String TAG = "WifiActivity";
 	public WifiManager mWifiManager;
 	public List<MScanWifi> mScanWifiList;
 	public List<ScanResult> mWifiList;
@@ -363,7 +364,7 @@ public class WifiActivity extends Activity {
 		switch (state) {
 			case WifiManager.WIFI_STATE_ENABLING://正在打开WiFi
 				wifiSwitch.setEnabled(false);
-				Log.i("aaaaaa", "正在打开WiFi");
+				Log.i(TAG, "正在打开WiFi");
 				break;
 			case WifiManager.WIFI_STATE_ENABLED://WiFi已经打开
 				//setSwitchChecked(true);
@@ -372,18 +373,18 @@ public class WifiActivity extends Activity {
 				layout.removeAllViews();
 				layout.addView(listView);
 				mScanner.resume();
-				Log.i("aaaaaa", "WiFi已经打开");
+				Log.i(TAG, "WiFi已经打开");
 				break;
 			case WifiManager.WIFI_STATE_DISABLING://正在关闭WiFi
 				wifiSwitch.setEnabled(false);
-				Log.i("aaaaaa", "正在关闭WiFi");
+				Log.i(TAG, "正在关闭WiFi");
 				break;
 			case WifiManager.WIFI_STATE_DISABLED://WiFi已经关闭
 				//setSwitchChecked(false);
 				wifiSwitch.setEnabled(true);
 				wifiSwitch.setChecked(false);
 				layout.removeAllViews();
-				Log.i("aaaaaa", "WiFi已经关闭  ");
+				Log.i(TAG, "WiFi已经关闭  ");
 				break;
 			default:
 				//setSwitchChecked(false);
